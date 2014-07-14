@@ -1,5 +1,5 @@
 def rabbit_count(current_month)
-  if(current_month>0)
+  if current_month>0
     y0,y1,y2,y3 = rabbit_count(current_month-1)
 	y0,y1,y2,y3 = y2+y3,y0,y1,y2+y3
 	total = (y0+y1+y2+y3)*2
